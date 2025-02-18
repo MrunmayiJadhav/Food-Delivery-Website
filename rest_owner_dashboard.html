@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<head>
+    <title>RESTAURANT OWNER DASHBOARD</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            background-image: url('https://img.freepik.com/premium-vector/happy-young-barista-making-coffee-customer_179970-772.jpg'); /* Replace 'background-image.jpg' with the path to your background image */
+            background-size: cover;
+            background-position: center;
+        }
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #333;
+        }
+        .menu-section,
+        .orders-section,
+        .info-section {
+            margin-bottom: 30px;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-radius: 8px;
+        }
+        .menu-section h3,
+        .orders-section h3,
+        .info-section h3 {
+            color: #333;
+            margin-bottom: 15px;
+        }
+        .menu-section ul,
+        .orders-section ul {
+            list-style: none;
+            padding: 0;
+        }
+        .menu-section li,
+        .orders-section li {
+            border-bottom: 1px solid #ccc;
+            padding: 10px 0;
+        }
+        .menu-section li:last-child,
+        .orders-section li:last-child {
+            border-bottom: none;
+        }
+        .info-section form {
+            display: flex;
+            flex-direction: column;
+        }
+        .info-section label {
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        .info-section input[type="text"],
+        .info-section input[type="email"],
+        .info-section textarea {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+        .info-section button {
+            padding: 12px 24px;
+            background-color: #4caf50;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            width: 50%;
+            margin: 10px auto;
+            font-size: 16px;
+            font-weight: bold;
+        }
+        .info-section button:hover {
+            background-color: #45a049;
+        }
+        .back-to-home {
+            display: block;
+            width: 150px;
+            margin: 0 auto;
+            padding: 10px 20px;
+            background-color: #4caf50;
+            color: #fff;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+        .back-to-home:hover {
+            background-color: #45a049;
+        }
+</style>
+</head>
+<body>
+    <div class="container">
+        <h2>RESTAURANT OWNER DASHBOARD</h2>
+        <div class="menu-section">
+            <h3>Manage Menu</h3>
+            <ul>
+                <li>Menu Item 1</li>
+                <li>Menu Item 2</li>
+                <li>Menu Item 3</li>
+            </ul>
+        </div>
+        <div class="orders-section">
+            <h3>View Orders</h3>
+            <ul>
+                <li>Order 1</li>
+                <li>Order 2</li>
+                <li>Order 3</li>
+            </ul>
+        </div>
+        <div class="info-section">
+            <h3>Update Restaurant Information</h3>
+            <form action="#" method="post">
+                <label for="restaurantName">Restaurant Name:</label>
+                <input type="text" id="restaurantName" name="restaurantName" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="phoneNumber">Phone Number:</label>
+                <input type="text" id="phoneNumber" name="phoneNumber" required>
+
+                <label for="address">Address:</label>
+                <textarea id="address" name="address" required></textarea>
+                <a href="./Homepage.html" class="back-to-home">Back to Home</a>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
