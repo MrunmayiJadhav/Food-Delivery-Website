@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<head>
+    <title>Order Tracking</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Track Your Order</h2>
+        <label for="orderId">Order ID:</label>
+        <input type="text" id="orderId">
+        <button onclick="trackOrder()">Track Order</button>
+    </div>
+
+    <script>
+        function trackOrder() {
+            var orderId = document.getElementById("orderId").value;
+            if (orderId) {
+                window.location.href = "orderstatus.html?orderId=" + orderId;
+            } else {
+                alert("Please enter an order ID.");
+            }
+        }
+    </script>
+</body>
+</html>
+
